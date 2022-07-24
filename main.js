@@ -151,9 +151,7 @@ firstFemale(arrayOfPeople);
 // Code plan: use .findIndex to locate the index of the first person who's last name starts with an 'M'
 // Pseudo code: set variable = array.findIndex
 const lastNameStartsWith = (array) => {
-  const lastNameM = array.findIndex((item) => {
-    item.lastName.charAt(0) === "M";
-    console.log(lastNameM);
-  });
+  const lastNameM = array.findIndex((item) => item.lastName.charAt(0) === "M");
+  console.log(lastNameM);
 };
 lastNameStartsWith(arrayOfPeople);
